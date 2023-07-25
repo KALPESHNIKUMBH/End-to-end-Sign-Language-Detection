@@ -1,3 +1,5 @@
-from signLanguage.logger import logging
-
-logging.info("wellcome to my account")
+import sys,os
+from signLanguage.pipeline.training_pipeline import TrainPipeline
+obj = TrainPipeline()
+obj.run_pipeline()
+print("Training Successfull!!")
